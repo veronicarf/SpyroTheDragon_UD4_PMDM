@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SpyroTheDragon</string>
+    <string name="worlds">Mundos</string>
+    <string name="characters">Personajes</string>
+    <string name="collectibles">Coleccionables</string>
+</resources>
