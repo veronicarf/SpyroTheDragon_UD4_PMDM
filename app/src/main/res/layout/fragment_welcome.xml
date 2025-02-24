@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/spyro_background"
+    android:padding="16dp">
+
+    <!-- Título de bienvenida -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:paddingBottom="8dp"
+        android:gravity="center"/>
+
+    <!-- Texto de introducción -->
+    <TextView
+        android:id="@+id/intro_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_subtitle"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:paddingBottom="20dp"/>
+
+    <!-- Imagen letras -->
+    <ImageView
+        android:id="@+id/spyro_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/letters"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/spyro_logo_desc"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Texto de descripción -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_description"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:paddingBottom="16dp"
+        android:textAlignment="center"/>
+
+    <!-- Frase "¿Listo para empezar?" -->
+    <TextView
+        android:id="@+id/ready_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ready_to_start"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:gravity="center"/>
+
+    <!-- Contenedor del botón con imagen de gema -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Imagen de gema -->
+        <ImageView
+            android:id="@+id/gem_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gems"
+            android:contentDescription="@string/gem_desc"/>
+
+        <!-- Botón Comenzar sobre la gema -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_start"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -12,16 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SpyroTheDragon"
         tools:targetApi="31">
+
+        <!-- Actividad principal -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Nueva actividad para el Easter Egg (reproducción de video) -->
+        <activity
+            android:name=".ui.EasterEggActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SpyroTheDragon"
+            android:configChanges="orientation|screenSize"/>
+
+
     </application>
 
 </manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:id="@+id/tutorialOverlay"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <!-- Bocadillo informativo generado en CollectionAnimationView -->
+    <dam.pmdm.spyrothedragon.ui.CollectionAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- Botón siguiente -->
+    <Button
+        android:id="@+id/btnNextTutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/siguiente"
+        android:layout_gravity="bottom|end"
+        android:padding="8dp"
+        android:background="@drawable/button_style"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp" />
+
+    <!-- Botón omitir -->
+    <Button
+        android:id="@+id/btnSkipTutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/omitir"
+        android:layout_gravity="bottom|start"
+        android:padding="8dp"
+        android:background="@drawable/button_style"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp" />
+
+</FrameLayout>

@@ -3,8 +3,106 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@+id/navigation_characters">
+    app:startDestination="@id/welcomeFragment">
 
+    <!-- Pantalla de bienvenida -->
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="dam.pmdm.spyrothedragon.ui.WelcomeFragment"
+        android:label="Bienvenida"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_welcome_to_tutorial"
+            app:destination="@id/fragment_tutorial_step_1"/>
+    </fragment>
+
+    <!-- Primer paso del tutorial -->
+    <fragment
+        android:id="@+id/fragment_tutorial_step_1"
+        android:name="dam.pmdm.spyrothedragon.ui.TutorialStep1Fragment"
+        android:label="Tutorial Paso 1"
+        tools:layout="@layout/fragment_tutorial_step_1">
+
+        <action
+            android:id="@+id/action_step1_to_step2"
+            app:destination="@id/fragment_tutorial_step_2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
+    </fragment>
+
+    <!-- Segundo paso del tutorial -->
+    <fragment
+        android:id="@+id/fragment_tutorial_step_2"
+        android:name="dam.pmdm.spyrothedragon.ui.TutorialStep2Fragment"
+        android:label="Tutorial Paso 2"
+        tools:layout="@layout/fragment_tutorial_step_2">
+
+        <action
+            android:id="@+id/action_step1_to_step2"
+            app:destination="@id/fragment_tutorial_step_2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
+    </fragment>
+
+    <!-- Tercer paso del tutorial -->
+    <fragment
+        android:id="@+id/fragment_tutorial_step_3"
+        android:name="dam.pmdm.spyrothedragon.ui.TutorialStep3Fragment"
+        android:label="Tutorial Paso 3"
+        tools:layout="@layout/fragment_tutorial_step_3">
+
+        <action
+            android:id="@+id/action_step1_to_step2"
+            app:destination="@id/fragment_tutorial_step_2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
+    </fragment>
+
+    <!-- Cuarto paso del tutorial -->
+    <fragment
+        android:id="@+id/fragment_tutorial_step_4"
+        android:name="dam.pmdm.spyrothedragon.ui.TutorialStep4Fragment"
+        android:label="Tutorial Paso 4"
+        tools:layout="@layout/fragment_tutorial_step_4">
+
+        <action
+            android:id="@+id/action_step1_to_step2"
+            app:destination="@id/fragment_tutorial_step_2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
+    </fragment>
+
+    <!-- Último paso del tutorial -->
+    <fragment
+        android:id="@+id/fragment_tutorial_step_5"
+        android:name="dam.pmdm.spyrothedragon.ui.TutorialStep5Fragment"
+        android:label="Fin del Tutorial"
+        tools:layout="@layout/fragment_tutorial_step_5">
+
+        <action
+            android:id="@+id/action_step1_to_step2"
+            app:destination="@id/fragment_tutorial_step_2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
+    </fragment>
+
+    <!-- Pantallas de la app -->
     <fragment
         android:id="@+id/navigation_worlds"
         android:name="dam.pmdm.spyrothedragon.ui.WorldsFragment"
